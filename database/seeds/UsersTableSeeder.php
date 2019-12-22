@@ -12,22 +12,37 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         //
-      DB::table('users')->insert(
+      DB::table('users')->insert([
         [
-        'name' => '松尾潤一',
-        'age' => 34,
+        'name' => '矢島英樹',
+        'age' => 46,
         'sex' => '男',
         'created_at' => new Datetime(),
         'updated_at' => new Datetime()
-      ]
+      ],
         [
-        'name' => '松尾育美',
-        'age' => 36,
+        'name' => '豊田陽子',
+        'age' => 45,
         'sex' => '女',
         'created_at' => new Datetime(),
         'updated_at' => new Datetime()
-      ]
+      ],
+        [
+        'name' => '大村さくら',
+        'age' => 16,
+        'sex' => '女',
+        'created_at' => new Datetime(),
+        'updated_at' => new Datetime()
+      ],
+        [
+        'name' => '神田美咲',
+        'age' => 22,
+        'sex' => '女',
+        'created_at' => new Datetime(),
+        'updated_at' => new Datetime()
+      ],
 
-    );
+
+    ]);
     }
 }
